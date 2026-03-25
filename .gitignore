@@ -1,0 +1,6 @@
+node_modules/
+mcp-kie-ai/
+.claude/
+.agents/
+skills-lock.json
+*.DS_Store
