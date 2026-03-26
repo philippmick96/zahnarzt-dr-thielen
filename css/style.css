@@ -393,13 +393,10 @@ h1, h2, h3, h4 {
 .slideshow__track { position: relative; }
 .slideshow__img {
   width: 100%; display: block;
-  object-fit: cover; aspect-ratio: 4/3;
+  object-fit: cover; object-position: center top; aspect-ratio: 4/3;
   position: absolute; top: 0; left: 0;
   opacity: 0;
   transition: opacity 0.8s ease;
-  /* Radial mask: fade white bg edges into hero purple seamlessly */
-  -webkit-mask-image: radial-gradient(ellipse 88% 85% at 50% 52%, black 52%, transparent 100%);
-  mask-image:         radial-gradient(ellipse 88% 85% at 50% 52%, black 52%, transparent 100%);
 }
 .slideshow__img:first-child { position: relative; }
 .slideshow__img.active { opacity: 1; }
