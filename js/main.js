@@ -11,8 +11,9 @@
 
   /* ── Header scroll shadow ── */
   const header = document.getElementById('header');
+  const heroHeight = document.getElementById('home')?.offsetHeight || 600;
   const onScroll = () => {
-    if (header) header.classList.toggle('scrolled', window.scrollY > 10);
+    if (header) header.classList.toggle('scrolled', window.scrollY > heroHeight * 0.7);
   };
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
@@ -86,7 +87,7 @@
   /* ── Scroll reveal ── */
   if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const revealEls = document.querySelectorAll(
-      '.service-card, .info-card, .about__content, .about__visual, .team-card, .section__header'
+      '.service-card, .info-card, .about__content, .about__visual, .team-card, .section__header, .why-point, .feature-block__visual, .feature-block__text'
     );
 
     const revealObserver = new IntersectionObserver((entries) => {
@@ -99,9 +100,10 @@
     }, { threshold: 0.06 });
 
     revealEls.forEach((el, i) => {
+      const delay = Math.min(i * 0.05, 0.3);
       el.style.opacity = '0';
-      el.style.transform = 'translateY(28px)';
-      el.style.transition = `opacity 0.6s ease ${i * 0.05}s, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) ${i * 0.05}s`;
+      el.style.transform = 'translateY(24px)';
+      el.style.transition = `opacity 0.55s ease ${delay}s, transform 0.55s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s`;
       revealObserver.observe(el);
     });
 
@@ -122,7 +124,7 @@
       #cursor-dot {
         position: fixed; top: 0; left: 0;
         width: 8px; height: 8px;
-        background: #FF6714;
+        background: #5423E7;
         border-radius: 50%;
         pointer-events: none;
         z-index: 9999;
@@ -134,8 +136,8 @@
       #cursor-dot.visible { opacity: 1; }
       #cursor-dot.hovered {
         width: 40px; height: 40px;
-        background: rgba(255, 103, 20, 0.15);
-        border: 1.5px solid rgba(255,103,20,0.6);
+        background: rgba(84, 35, 231, 0.15);
+        border: 1.5px solid rgba(84, 35, 231, 0.6);
       }
     `;
     document.head.appendChild(cursorStyle);
@@ -154,6 +156,23 @@
       el.addEventListener('mouseenter', () => cursor.classList.add('hovered'));
       el.addEventListener('mouseleave', () => cursor.classList.remove('hovered'));
     });
+  }
+
+  /* ── Hero Slideshow ── */
+  const slides = document.querySelectorAll('.slideshow__img');
+  const dots   = document.querySelectorAll('.slideshow__dot');
+  if (slides.length > 1) {
+    let current = 0;
+    const goTo = (i) => {
+      slides[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      current = (i + slides.length) % slides.length;
+      slides[current].classList.add('active');
+      dots[current].classList.add('active');
+    };
+    dots.forEach((dot, i) => dot.addEventListener('click', () => { goTo(i); resetTimer(); }));
+    let timer = setInterval(() => goTo(current + 1), 4000);
+    const resetTimer = () => { clearInterval(timer); timer = setInterval(() => goTo(current + 1), 4000); };
   }
 
   /* ── Magnetic buttons ── */

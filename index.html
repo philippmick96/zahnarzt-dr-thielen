@@ -9,7 +9,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -20,17 +20,6 @@
   <header class="header" id="header" role="banner">
     <nav class="nav container" aria-label="Hauptnavigation">
       <a href="#home" class="nav__logo" aria-label="Zahnarzt Dr. Thielen – Startseite">
-        <div class="logo-mark" aria-hidden="true">
-          <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Hintergrund -->
-            <rect width="44" height="44" rx="11" fill="#1A9E96"/>
-            <!-- Zahnkrone -->
-            <path d="M22 7C17.8 7 14 9.8 14 14.2C14 18 15.2 21.2 15.8 23.5C16.1 24.7 16.3 25.8 16.3 26.5" stroke="white" stroke-width="0" fill="none"/>
-            <path d="M14.5 8.5 C12.5 10 11.5 12.5 11.5 15 C11.5 19.5 13.5 23 14.5 25 Q15.5 27 15.5 29 Q15 33.5 16 35 Q17 36 17.5 35 Q18.5 32.5 19 29 Q19.5 27.5 22 27.5 Q24.5 27.5 25 29 Q25.5 32.5 26.5 35 Q27 36 28 35 Q29 33.5 28.5 29 Q28.5 27 29.5 25 C30.5 23 32.5 19.5 32.5 15 C32.5 12.5 31.5 10 29.5 8.5 C27.5 7 25 6.5 22 6.5 C19 6.5 16.5 7 14.5 8.5 Z" fill="white" fill-opacity="0.95"/>
-            <!-- Glanzlinie oben links auf der Krone -->
-            <path d="M17 11 Q16 14 16.5 17" stroke="#1A9E96" stroke-width="1.2" stroke-linecap="round" opacity="0.35"/>
-          </svg>
-        </div>
         <div class="logo-text">
           <span class="logo-name">Dr. Thielen</span>
           <span class="logo-subtitle">Zahnarztpraxis · Saarbrücken</span>
@@ -61,37 +50,33 @@
 
     <!-- ═══════ HERO ═══════ -->
     <section class="hero" id="home" aria-label="Willkommen">
+      <div class="container hero__inner">
 
-      <div class="hero__split-photo" aria-hidden="true">
-        <img
-          src="images/praxis/_7580_neu_neu%202.jpg"
-          alt=""
-          class="hero__portrait"
-        />
-        <div class="hero__split-fade"></div>
-        <div class="hero__split-line"></div>
-      </div>
-
-      <div class="container hero__content">
         <div class="hero__text">
-          <p class="hero__location">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Bahnhofstraße 34, Saarbrücken
+          <p class="hero__eyebrow">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Bahnhofstraße 34 · Saarbrücken
           </p>
+
+          <div class="hero__badge" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 8.5C12.5 7 10 7 9 8.5C7.5 10.5 8 15 10 18Q11 20 12 22Q13 20 14 18C16 15 16.5 10.5 14.5 8.5Z" fill="currentColor" stroke="none" opacity="0.9"/></svg>
+            Zahnarztpraxis Dr. Thielen
+          </div>
 
           <h1 class="hero__title">
             Ihre Zähne in<br>
             <em>besten Händen.</em>
           </h1>
 
-          <p class="hero__intro">Der Erhalt schon als verloren geglaubter Zähne liegt mir besonders am Herzen. Mit Ihnen gemeinsam die beste Lösung zu finden – das ist unser Anspruch.</p>
+          <p class="hero__intro">Der Erhalt schon als verloren geglaubter Zähne liegt uns besonders am Herzen. Gemeinsam finden wir die beste Lösung – persönlich, kompetent, ohne Druck.</p>
 
           <div class="hero__actions">
             <a href="mailto:zahnarzt-dr-thielen@gmx.de" class="btn btn--primary btn--lg">
               <span>Termin vereinbaren</span>
               <svg class="btn__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </a>
-            <a href="tel:068183908989" class="btn btn--outline-dark btn--lg">
+            <a href="tel:068183908989" class="btn btn--ghost btn--lg">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.29 6.29l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
               0681 – 839 089 89
             </a>
           </div>
@@ -104,10 +89,24 @@
             <span>Alle Kassen willkommen</span>
           </div>
         </div>
-      </div>
 
-      <div class="hero__scroll" aria-hidden="true">
-        <div class="scroll-indicator"></div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__card hero__slideshow">
+            <div class="slideshow__track">
+              <img src="images/smile-1.jpg" alt="" class="slideshow__img active" width="700" height="525" />
+              <img src="images/smile-3.jpg" alt="" class="slideshow__img" width="700" height="525" />
+              <img src="images/smile-4.jpg" alt="" class="slideshow__img" width="700" height="525" />
+              <img src="images/smile-5.jpg" alt="" class="slideshow__img" width="700" height="525" />
+            </div>
+            <div class="slideshow__dots">
+              <button class="slideshow__dot active" aria-label="Bild 1"></button>
+              <button class="slideshow__dot" aria-label="Bild 2"></button>
+              <button class="slideshow__dot" aria-label="Bild 3"></button>
+              <button class="slideshow__dot" aria-label="Bild 4"></button>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -153,8 +152,48 @@
       </div>
     </div>
 
+    <!-- ═══════ WARUM DR. THIELEN ═══════ -->
+    <section class="why-section" aria-labelledby="why-heading">
+      <div class="container why__inner">
+        <div class="why__headline">
+          <span class="section__label">Warum zu uns kommen?</span>
+          <h2 id="why-heading" class="why__title">Zahnmedizin,<br>die wirklich<br><em>zuhört.</em></h2>
+        </div>
+        <div class="why__points">
+          <div class="why-point">
+            <span class="why-point__number">01</span>
+            <div>
+              <h3>Zahnerhalt zuerst</h3>
+              <p>Wir kämpfen für jeden Zahn – selbst wenn andere längst aufgegeben haben.</p>
+            </div>
+          </div>
+          <div class="why-point">
+            <span class="why-point__number">02</span>
+            <div>
+              <h3>Keine Überbehandlung</h3>
+              <p>Transparente Planung, ehrliche Empfehlungen, gemeinsame Entscheidungen.</p>
+            </div>
+          </div>
+          <div class="why-point">
+            <span class="why-point__number">03</span>
+            <div>
+              <h3>Alle willkommen</h3>
+              <p>Kassen- und Privatpatienten, Kinder und Angstpatienten – alle gleich.</p>
+            </div>
+          </div>
+          <div class="why-point">
+            <span class="why-point__number">04</span>
+            <div>
+              <h3>Moderne Techniken</h3>
+              <p>Minimalinvasive Methoden und aktuelle Technologie für langfristige Ergebnisse.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ═══════ LEISTUNGEN ═══════ -->
-    <section class="section section--sand" id="leistungen" aria-labelledby="leistungen-heading">
+    <section class="section section--white" id="leistungen" aria-labelledby="leistungen-heading">
       <div class="container">
         <div class="section__header">
           <span class="section__label">Was wir für Sie tun</span>
@@ -255,30 +294,45 @@
             </div>
           </article>
 
+          <article class="service-card" aria-labelledby="s-chirurgie">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/><line x1="3" y1="9" x2="21" y2="9"/></svg>
+            </div>
+            <div class="service-card__body">
+              <h3 id="s-chirurgie" class="service-card__title">Chirurgische Eingriffe</h3>
+              <p class="service-card__desc">Von der einfachen Zahnentfernung bis zur komplexen Wurzelspitzenresektion: Wir führen kleinchirurgische Eingriffe schonend und präzise durch – mit modernster Technik und umfassender Nachsorge.</p>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
 
-    <!-- ═══════ FOTO STRIP ═══════ -->
-    <div class="photo-strip" aria-hidden="true">
-      <div class="photo-strip__img-wrap">
-        <img src="images/laecheln.jpg" alt="Strahlendes Lächeln – Ergebnis einer professionellen Behandlung bei Dr. Thielen" class="photo-strip__img" loading="lazy" />
-        <div class="photo-strip__overlay">
-          <p class="photo-strip__text">Ihr Lächeln ist<br><em>unser Antrieb.</em></p>
+    <!-- ═══════ FEATURE BLOCK ═══════ -->
+    <div class="feature-block" aria-label="Behandlungsphilosophie">
+      <div class="container feature-block__inner">
+        <div class="feature-block__visual">
+          <img
+            src="images/laecheln.jpg"
+            alt="Strahlendes Lächeln – Ergebnis einer Behandlung bei Dr. Thielen"
+            class="feature-block__img"
+            loading="lazy"
+            width="700" height="525"
+          />
         </div>
-      </div>
-    </div>
-
-    <!-- ═══════ ZITAT / PHILOSOPHIE ═══════ -->
-    <div class="quote-section" aria-label="Behandlungsphilosophie">
-      <div class="container quote-section__inner">
-        <blockquote>
-          Der Erhalt schon als verloren geglaubter Zähne liegt mir besonders am Herzen. Dabei ist es unser Anspruch, mit Ihnen gemeinsam die beste Lösung für Ihre individuelle Situation zu finden.
-        </blockquote>
-        <div class="quote-author" aria-label="Zitat von">
-          <div class="quote-author__line" aria-hidden="true"></div>
-          <span class="quote-author__name">Dr. Sebastian Thielen</span>
-          <span style="color: rgba(255,255,255,0.55); font-size: 0.9rem;">· Zahnarzt &amp; Inhaber</span>
+        <div class="feature-block__text">
+          <blockquote class="feature-quote">
+            „Der Erhalt schon als verloren geglaubter Zähne liegt mir besonders am Herzen. Ich finde Wege, wo andere keinen mehr sehen."
+          </blockquote>
+          <div class="quote-author">
+            <div class="quote-author__line" aria-hidden="true"></div>
+            <span class="quote-author__name">Dr. Sebastian Thielen</span>
+            <span style="color: rgba(255,255,255,0.65); font-size: 0.875rem;">· Zahnarzt &amp; Inhaber</span>
+          </div>
+          <a href="#kontakt" class="btn btn--white btn--lg" style="margin-top: 2.5rem;">
+            <span>Termin anfragen</span>
+            <svg class="btn__arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
         </div>
       </div>
     </div>
@@ -345,11 +399,11 @@
     </section>
 
     <!-- ═══════ TEAM / DR. THIELEN ═══════ -->
-    <section class="section team-section" id="team" aria-labelledby="team-heading">
+    <section class="section section--white team-section" id="team" aria-labelledby="team-heading">
       <div class="container">
         <div class="section__header">
           <span class="section__label">Ihr Ansprechpartner</span>
-          <h2 id="team-heading" class="section__title">Dr. Sebastian Thielen</h2>
+          <h2 id="team-heading" class="section__title">Wer behandelt Sie</h2>
           <p class="section__subtitle">Erfahrung, Empathie und Leidenschaft für die Zahnheilkunde – das ist Dr. Thielen.</p>
         </div>
 
@@ -395,8 +449,26 @@
       </div>
     </section>
 
+    <!-- ═══════ CTA STRIP ═══════ -->
+    <div class="cta-strip">
+      <div class="cta-strip__inner">
+        <span class="cta-strip__label">Ihr nächster Schritt</span>
+        <h2 class="cta-strip__title">Bereit für gesunde,<br><em>strahlende Zähne?</em></h2>
+        <p class="cta-strip__subtitle">Vereinbaren Sie jetzt Ihren Termin – persönlich, unkompliziert, auf Augenhöhe.</p>
+        <div class="cta-strip__actions">
+          <a href="tel:068183908989" class="btn btn--white btn--lg">
+            <span>Jetzt anrufen</span>
+            <svg class="btn__arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="mailto:zahnarzt-dr-thielen@gmx.de" class="btn btn--ghost btn--lg">
+            E-Mail schreiben
+          </a>
+        </div>
+      </div>
+    </div>
+
     <!-- ═══════ ÖFFNUNGSZEITEN + KONTAKT ═══════ -->
-    <section class="section section--sand" id="oeffnungszeiten" aria-labelledby="info-heading">
+    <section class="section section--white" id="oeffnungszeiten" aria-labelledby="info-heading">
       <div class="container">
         <div class="section__header">
           <span class="section__label">Wann wir für Sie da sind</span>
@@ -426,7 +498,7 @@
               </div>
               <div>
                 <div class="emergency-banner__title">Zahnärztlicher Notfall?</div>
-                <div class="emergency-banner__text">Rufen Sie uns während der Sprechzeiten an: <a href="tel:068183908989" style="color: var(--color-accent); font-weight: 600;">0681 – 839 089 89</a>. Außerhalb der Zeiten hilft der zahnärztliche Notfalldienst.</div>
+                <div class="emergency-banner__text">Rufen Sie uns während der Sprechzeiten an: <a href="tel:068183908989" style="color: var(--teal); font-weight: 700;">0681 – 839 089 89</a>. Außerhalb der Zeiten hilft der zahnärztliche Notfalldienst.</div>
               </div>
             </div>
           </div>
@@ -474,7 +546,7 @@
                 title="Standort der Zahnarztpraxis Dr. Thielen – Bahnhofstraße 34, Saarbrücken"
               ></iframe>
             </div>
-            <a href="https://www.google.com/maps/dir//Bahnhofstra%C3%9Fe+34,+66111+Saarbr%C3%BCcken" target="_blank" rel="noopener noreferrer" class="btn btn--outline-dark btn--sm map-btn">
+            <a href="https://www.google.com/maps/dir//Bahnhofstra%C3%9Fe+34,+66111+Saarbr%C3%BCcken" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm map-btn">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
               Route berechnen
             </a>
@@ -511,7 +583,7 @@
               <span class="contact-info__value">Mo 09–12:30, 13:30–17:30<br>Di 09–13:30, 15–18:30<br>Mi 09–14:30<br>Do 09:30–13, 14–18<br>Fr 09–14 Uhr</span>
             </div>
             <div class="contact-info__cta">
-              <a href="tel:068183908989" class="btn btn--primary btn--lg">
+              <a href="tel:068183908989" class="btn btn--white btn--lg">
                 <span>Jetzt anrufen</span>
                 <svg class="btn__arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </a>
@@ -570,9 +642,6 @@
       <div class="footer__grid">
         <div class="footer__brand">
           <a href="#home" class="nav__logo" aria-label="Dr. Thielen – zurück zum Seitenanfang">
-            <div class="logo-mark" aria-hidden="true">
-              <svg width="36" height="36" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="12" fill="#1A6B6B"/><path d="M13 11c0 0 1.8-2.5 5-2.5s4.5 2 4.5 2 1.3-2 4.5-2 5 2.5 5 2.5c.6 5-1.2 8.5-3.5 11-1.8 1.8-3.5 2.5-6 7.5-2.5-5-3.8-5.5-6-7.5-2.3-2.5-4.1-6-3.5-11z" fill="white" fill-opacity="0.95"/></svg>
-            </div>
             <div class="logo-text">
               <span class="logo-name">Dr. Thielen</span>
               <span class="logo-subtitle">Zahnarztpraxis · Saarbrücken</span>
