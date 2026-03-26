@@ -124,7 +124,7 @@
       #cursor-dot {
         position: fixed; top: 0; left: 0;
         width: 8px; height: 8px;
-        background: #5423E7;
+        background: #0D9488;
         border-radius: 50%;
         pointer-events: none;
         z-index: 9999;
@@ -136,8 +136,8 @@
       #cursor-dot.visible { opacity: 1; }
       #cursor-dot.hovered {
         width: 40px; height: 40px;
-        background: rgba(84, 35, 231, 0.15);
-        border: 1.5px solid rgba(84, 35, 231, 0.6);
+        background: rgba(13, 148, 136, 0.15);
+        border: 1.5px solid rgba(13, 148, 136, 0.6);
       }
     `;
     document.head.appendChild(cursorStyle);

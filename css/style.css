@@ -5,23 +5,23 @@
    Palette: Deep Teal-Black / Pure White / Mint / Teal
    ═══════════════════════════════════════════════════════════════ */
 
-/* ── Design Tokens – Lemon Squeezy Palette ── */
+/* ── Design Tokens – Teal Palette ── */
 :root {
-  --black:        #0D0B14;
-  --black-deep:   #07050D;
+  --black:        #0C1A19;
+  --black-deep:   #060E0D;
   --white:        #FFFFFF;
-  --sand:         #F0EEFF;
-  --sand-dark:    #D9D0FF;
-  --sand-deeper:  #BEB2F5;
-  --sage:         #8B7ACC;
-  --sage-dark:    #2D1B69;
-  --teal:         #5423E7;
-  --teal-dark:    #3D18C0;
-  --teal-light:   #EDE9FF;
-  --teal-mid:     #7B52F0;
-  --grey:         #D0CCDD;
-  --grey-mid:     #6B6480;
-  --grey-light:   #F7F7F8;
+  --sand:         #F0FDFA;
+  --sand-dark:    #CCFBF1;
+  --sand-deeper:  #99F6E4;
+  --sage:         #2DD4BF;
+  --sage-dark:    #134E4A;
+  --teal:         #0D9488;
+  --teal-dark:    #0F766E;
+  --teal-light:   #CCFBF1;
+  --teal-mid:     #14B8A6;
+  --grey:         #CBD5D4;
+  --grey-mid:     #4B7A75;
+  --grey-light:   #F7FFFE;
 
   --font: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
@@ -107,7 +107,7 @@ h1, h2, h3, h4 {
 .btn--primary:hover {
   background: var(--teal-dark); border-color: var(--teal-dark); color: var(--white);
   transform: translateY(-2px);
-  box-shadow: 0 8px 28px rgba(84, 35, 231, 0.45);
+  box-shadow: 0 8px 28px rgba(13, 148, 136, 0.45);
 }
 
 /* Ghost – transparent with white border, fill-sweep on hover */
@@ -184,13 +184,13 @@ h1, h2, h3, h4 {
 .header {
   position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
   height: var(--header-height);
-  background: rgba(30,12,100,0.6);
+  background: rgba(5,50,46,0.65);
   backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255,255,255,0.1);
   transition: background 0.3s, border-color 0.3s, box-shadow 0.3s;
 }
 .header.scrolled {
-  background: rgba(30,12,100,0.9);
+  background: rgba(5,50,46,0.92);
   backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(255,255,255,0.12);
   box-shadow: 0 4px 24px rgba(0,0,0,0.3);
@@ -520,7 +520,7 @@ h1, h2, h3, h4 {
 .service-card:hover {
   background: var(--white);
   transform: translateY(-3px);
-  box-shadow: 0 12px 36px rgba(84,35,231,0.12);
+  box-shadow: 0 12px 36px rgba(13,148,136,0.12);
 }
 .service-card:hover::before { transform: scaleY(1); }
 
@@ -533,7 +533,7 @@ h1, h2, h3, h4 {
 }
 .service-card--featured:hover {
   background: var(--teal);
-  box-shadow: 0 20px 50px rgba(84,35,231,0.4);
+  box-shadow: 0 20px 50px rgba(13,148,136,0.4);
 }
 
 .service-card__icon {
@@ -715,12 +715,12 @@ h1, h2, h3, h4 {
   border-radius: 14px;
   padding: 2rem;
   display: flex; flex-direction: column; gap: 1.5rem;
-  box-shadow: 0 4px 20px rgba(84,35,231,0.07);
+  box-shadow: 0 4px 20px rgba(13,148,136,0.07);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .info-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 40px rgba(84,35,231,0.14);
+  box-shadow: 0 16px 40px rgba(13,148,136,0.14);
 }
 .info-card__icon {
   width: 44px; height: 44px;
@@ -765,7 +765,7 @@ h1, h2, h3, h4 {
 /* ── Notfall Banner ── */
 .emergency-banner {
   background: var(--teal-light);
-  border: 1.5px solid rgba(84, 35, 231, 0.25);
+  border: 1.5px solid rgba(13, 148, 136, 0.25);
   border-radius: var(--radius-sm);
   padding: 1.25rem 1.5rem;
   display: flex; align-items: flex-start; gap: 1rem;
@@ -1281,7 +1281,7 @@ a.contact-info__value:hover { color: var(--teal-light); }
 .form-input::placeholder { color: var(--grey); font-style: italic; }
 .form-input:focus {
   border-color: var(--teal);
-  box-shadow: 0 0 0 3px rgba(84, 35, 231, 0.12);
+  box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.12);
 }
 .form-input:hover:not(:focus) { border-color: var(--sand-deeper); }
 
